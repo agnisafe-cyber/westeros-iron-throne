@@ -77,7 +77,7 @@ for (let i = 0; i < 105; i++) {
 
 // Asset sources: CC0 models. The large castle and medieval cottage are loaded as actual GLB meshes.
 const ASSETS = {
-  castle: 'https://files.innerscene.com/library/castle-with-keep-1a75a9e1/be0d9411a3e3b580b2b5/castle-with-keep.glb',
+  castle: 'https://raw.githubusercontent.com/agnisafe-cyber/westeros-iron-throne/main/sample_2026-11-20T084334.356.glb',
   house: 'https://files.innerscene.com/library/low-poly-medieval-house-cb233936/3601fdf8b7bd0b54f13b/low-poly-medieval-house.glb',
   character: 'https://grab3d.com/dl/medieval-villager-rigged/medieval-villager-rigged.glb'
 };
