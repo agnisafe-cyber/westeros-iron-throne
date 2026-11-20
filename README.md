@@ -1,15 +1,16 @@
-# Westeros: The Iron Throne
+# Westeros — Blender-first project
 
-A browser-first, third-person fantasy adventure prototype, beginning in the era of Aegon's Conquest.
+This repository is being rebuilt around Blender-created 3D environments.
 
-## Play locally
-Open index.html with a local development server (for example, VS Code Live Server). Three.js loads from jsDelivr, so an internet connection is required.
+## Current assets
 
-## Controls
-- WASD / Arrow keys: move
-- Mouse: look around (click the game to recapture the mouse)
-- Shift: run
-- Esc: release mouse
+- `assets/models/winterfell/winterfell_main_castle.glb` — initial Winterfell castle model.
 
-## Prototype notes
-This first build uses procedural low-poly scenery and placeholder character geometry. It is a foundation for later character models, terrain, quests, mounts, combat, and campaign systems. It is not an official Game of Thrones product.
+## Workflow
+
+1. Create and refine individual 3D assets in Blender.
+2. Assemble Winterfell from separate assets.
+3. Export optimized GLB models.
+4. Integrate the finished environment into the game.
+
+The previous browser prototype files have been cleared.
