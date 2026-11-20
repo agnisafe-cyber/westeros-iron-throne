@@ -87,14 +87,8 @@ function prepareModel(root, targetHeight = null) {
   let bounds = new THREE.Box3().setFromObject(root);
   let size = bounds.getSize(new THREE.Vector3());
 
-  // Some exported assets use Z-up. Rotate those so Three.js uses Y-up.
-  if (size.z > size.y * 1.18) {
-    root.rotation.x = -Math.PI / 2;
-    root.updateMatrixWorld(true);
-    bounds = new THREE.Box3().setFromObject(root);
-    size = bounds.getSize(new THREE.Vector3());
-  }
-
+  // GLB assets use the glTF standard: Y is up. Do not infer orientation
+  // from bounding-box proportions; doing so tipped the large castle onto its side.
   if (targetHeight && size.y > 0) {
     root.scale.multiplyScalar(targetHeight / size.y);
     root.updateMatrixWorld(true);
